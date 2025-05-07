@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ivBranding"
+        android:layout_width="220dp"
+        android:layout_height="309dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="95dp"
+        android:contentDescription="@string/image_branding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/newspaper" />
+
+    <Button
+        android:id="@+id/btFind"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#FDDE7D"
+        android:text="@string/find_news"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/btFavorite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivBranding"
+        app:strokeColor="#000000"
+        app:strokeWidth="1dp"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/btFavorite"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#FEDF7D"
+        android:text="@string/favorite_news"
+        android:textColor="#000000"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btFind"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btFind"
+        app:strokeColor="#000000"
+        app:strokeWidth="1dp"
+        tools:ignore="VisualLintButtonSize" />
+</androidx.constraintlayout.widget.ConstraintLayout>

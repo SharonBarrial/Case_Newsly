@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AppNewsly</string>
+    <string name="image_branding">Image branding</string>
+    <string name="find_news">Find news</string>
+    <string name="favorite_news">Favorite news</string>
+    <string name="search">Search</string>
+    <string name="enter_a_keyword">Enter a keyword</string>
+    <string name="details">Details</string>
+    <string name="picture_of_new">Picture of new</string>
+    <string name="website">Website</string>
+    <string name="for_adittion_to_favorite_news">For adittion to favorite news</string>
+</resources>
